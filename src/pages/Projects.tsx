@@ -7,11 +7,11 @@ const Projects = () => {
       id: 1,
       title: "MedAssess – AI-Powered Healthcare System",
       description: "A comprehensive health platform with real-time doctor-patient communication, AI-driven disease assessment, appointment management, and secured login system.",
-      image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=600&h=400&fit=crop",
+      image: "/medassess.jpg",  // Place the image in public folder
       technologies: ["React", "Node.js", "Firebase", "AI APIs", "WebRTC"],
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com",
-      date: "2024",
+      liveUrl: "https://medassess.vercel.app",
+      githubUrl: "https://github.com/himanshu9470/medassess",
+      date: "2025",
       featured: true
     },
     {
@@ -22,7 +22,7 @@ const Projects = () => {
       technologies: ["Next.js", "Three.js", "GSAP", "Blender", "TypeScript"],
       liveUrl: "https://example.com",
       githubUrl: "https://github.com",
-      date: "2024",
+      date: "2025",
       featured: true
     },
     {
@@ -32,18 +32,18 @@ const Projects = () => {
       image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop",
       technologies: ["Next.js", "Supabase", "Tailwind CSS", "PostgreSQL"],
       liveUrl: "https://example.com",
-      githubUrl: "https://github.com",
-      date: "2024"
+      githubUrl: "https://github.com/himanshu9470/Student-managment",
+      date: "2025"
     },
     {
       id: 4,
       title: "Echo – Real-Time Video Chat App",
       description: "A secure and responsive video chat web application with real-time audio/video, peer-to-peer connection, and room creation features.",
-      image: "https://images.unsplash.com/photo-1577563908411-5077b6dc7624?w=600&h=400&fit=crop",
+      image: "/echo video chat.png",  // Place the image in public folder
       technologies: ["WebRTC", "Socket.io", "Node.js", "Express", "Tailwind CSS"],
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com",
-      date: "2023",
+      liveUrl: "https://echovideo-chat.vercel.app",
+      githubUrl: "https://github.com/himanshu9470/echo-video",
+      date: "2025",
       featured: true
     },
     {
@@ -53,8 +53,8 @@ const Projects = () => {
       image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&h=400&fit=crop",
       technologies: ["Python", "Flask", "PyPDF2", "pdf2image", "HTML/CSS", "JavaScript"],
       liveUrl: "https://example.com",
-      githubUrl: "https://github.com",
-      date: "2023"
+      githubUrl: "https://github.com/himanshu9470/pdfworkparty",
+      date: "2025"
     }
   ];
 
@@ -74,7 +74,7 @@ const Projects = () => {
 
         {/* Featured Projects */}
         <div className="mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Featured Projects</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Projects</h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {featuredProjects.map((project) => (
               <div key={project.id} className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
@@ -89,7 +89,7 @@ const Projects = () => {
                     {project.date}
                   </div>
                   <div className="absolute top-4 left-4 bg-gradient-to-r from-orange-500 to-red-500 text-white px-3 py-1 rounded-full text-sm font-medium">
-                    Featured
+                    Project
                   </div>
                 </div>
                 
@@ -111,14 +111,18 @@ const Projects = () => {
                   
                   {/* Action Buttons */}
                   <div className="flex space-x-4">
-                    <Button className="flex items-center space-x-2 flex-1 bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-700 hover:to-red-700">
-                      <ExternalLink size={18} />
-                      <span>Live Demo</span>
-                    </Button>
-                    <Button variant="outline" className="flex items-center space-x-2 flex-1 border-orange-300 text-orange-600 hover:bg-orange-50">
-                      <Github size={18} />
-                      <span>Code</span>
-                    </Button>
+                    <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="flex-1">
+                      <Button className="flex items-center space-x-2 w-full bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-700 hover:to-red-700">
+                        <ExternalLink size={18} />
+                        <span>Live Demo</span>
+                      </Button>
+                    </a>
+                    <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="flex-1">
+                      <Button variant="outline" className="flex items-center space-x-2 w-full border-orange-300 text-orange-600 hover:bg-orange-50">
+                        <Github size={18} />
+                        <span>Code</span>
+                      </Button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -162,14 +166,18 @@ const Projects = () => {
                   
                   {/* Action Buttons */}
                   <div className="flex space-x-4">
-                    <Button className="flex items-center space-x-2 flex-1 bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-700 hover:to-red-700">
-                      <ExternalLink size={18} />
-                      <span>Live Demo</span>
-                    </Button>
-                    <Button variant="outline" className="flex items-center space-x-2 flex-1 border-orange-300 text-orange-600 hover:bg-orange-50">
-                      <Github size={18} />
-                      <span>Code</span>
-                    </Button>
+                    <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="flex-1">
+                      <Button className="flex items-center space-x-2 w-full bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-700 hover:to-red-700">
+                        <ExternalLink size={18} />
+                        <span>Live Demo</span>
+                      </Button>
+                    </a>
+                    <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="flex-1">
+                      <Button variant="outline" className="flex items-center space-x-2 w-full border-orange-300 text-orange-600 hover:bg-orange-50">
+                        <Github size={18} />
+                        <span>Code</span>
+                      </Button>
+                    </a>
                   </div>
                 </div>
               </div>

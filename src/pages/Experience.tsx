@@ -48,7 +48,7 @@ const Experience = () => {
       school: "Excel Engineering College (Autonomous)",
       location: "India",
       period: "2022 - Present (Expected Graduation: 2026)",
-      gpa: "Current CGPA: 8.5/10",
+      gpa: "Current CGPA: 7.57/10",
       highlights: [
         "Studied core subjects: Data Structures, Algorithms, Database Systems, Operating Systems, Computer Networks, and AI",
         "Actively participated in coding competitions, tech fests, and workshops",

@@ -16,7 +16,7 @@ const Home = () => {
           <AnimatedSection className="text-center">
             <div className="mb-8">
               <img
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face"
+                src="https://avatars.githubusercontent.com/u/132771107?v=4"
                 alt="Profile"
                 className="w-32 h-32 rounded-full mx-auto mb-6 shadow-lg ring-4 ring-white hover-glow hover-lift transition-all duration-300"
               />
@@ -39,21 +39,27 @@ const Home = () => {
                   View My Work
                 </Link>
               </Button>
-              
-              <Button variant="outline" size="lg" className="flex items-center space-x-2 border-orange-300 text-orange-600 hover:bg-orange-50 hover-lift transition-all duration-300">
-                <Download size={18} />
-                <span>Download Resume</span>
-              </Button>
+                <Button
+                variant="outline"
+                size="lg"
+                className="flex items-center space-x-2 border-orange-300 text-orange-600 hover:bg-orange-50 hover-lift transition-all duration-300"
+                asChild
+                >
+                <a href="https://drive.google.com/file/d/1KAPaoHA9JhTC2iSBMSeVcNDQK3Tbotq2/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">
+                  <Download size={18} />
+                  <span>Download Resume</span>
+                </a>
+                </Button>
             </div>
             
             <div className="flex justify-center space-x-6 animate-slide-up" style={{ animationDelay: '0.6s' }}>
-              <a href="https://github.com" className="text-gray-600 hover:text-orange-600 transition-colors hover-lift">
+              <a href="https://github.com/himanshu9470" className="text-gray-600 hover:text-orange-600 transition-colors hover-lift">
                 <Github size={24} />
               </a>
-              <a href="https://linkedin.com" className="text-gray-600 hover:text-orange-600 transition-colors hover-lift">
+              <a href="https://www.linkedin.com/in/himanshu-kumar-vishwakrma-56a7b2188/" className="text-gray-600 hover:text-orange-600 transition-colors hover-lift">
                 <Linkedin size={24} />
               </a>
-              <a href="mailto:himanshu@example.com" className="text-gray-600 hover:text-orange-600 transition-colors hover-lift">
+              <a href="mailto:himanshu160204@gmail.com" className="text-gray-600 hover:text-orange-600 transition-colors hover-lift">
                 <Mail size={24} />
               </a>
             </div>
@@ -70,9 +76,9 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {[
-              { number: "5+", label: "Major Projects", color: "text-orange-600" },
-              { number: "2+", label: "Years Experience", color: "text-red-600" },
-              { number: "10+", label: "Technologies", color: "text-green-600" },
+              { number: "1", label: "Mini Project", color: "text-orange-600" },
+              { number: "1+", label: "Years Experience", color: "text-red-600" },
+              { number: "2+", label: "Technologies", color: "text-green-600" },
               { number: "1", label: "Internship", color: "text-blue-600" }
             ].map((stat, index) => (
               <AnimatedSection key={index} delay={index * 100} className="text-center hover-lift transition-all duration-300">
@@ -87,13 +93,13 @@ const Home = () => {
       {/* Featured Projects Preview */}
       <AnimatedSection className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center mb-12">Featured Projects</h2>
+          <h2 className="text-3xl font-bold text-center mb-12">Projects</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
                 title: "MedAssess",
                 description: "AI-Powered Healthcare System with real-time communication and disease assessment.",
-                image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=400&h=200&fit=crop"
+                image: "/medassess.jpg"  // Place the image in public folder
               },
               {
                 title: "3D Animated Portfolio",
@@ -103,7 +109,7 @@ const Home = () => {
               {
                 title: "Echo Video Chat",
                 description: "Real-time video chat application with WebRTC and Socket.io.",
-                image: "https://images.unsplash.com/photo-1577563908411-5077b6dc7624?w=400&h=200&fit=crop"
+                image: "/echo video chat.png"  // Place the image in public folder
               }
             ].map((project, index) => (
               <AnimatedSection key={index} delay={index * 200} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover-lift">

@@ -17,8 +17,8 @@ const About = () => {
           {/* Image */}
           <div className="order-2 lg:order-1">
             <img
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=600&fit=crop&crop=face"
-              alt="Himanshu Kumar Vishwakarma"
+              src="https://avatars.githubusercontent.com/u/132771107?v=4"
+              alt="Himanshu Kumar Vishwakrma"
               className="rounded-2xl shadow-2xl w-full max-w-md mx-auto"
             />
           </div>
@@ -53,7 +53,7 @@ const About = () => {
               <GraduationCap className="text-orange-600 mr-4" size={32} />
               <div>
                 <h3 className="text-xl font-semibold text-gray-900">Bachelor of Science in Computer Science</h3>
-                <p className="text-gray-600">Currently Pursuing • Expected Graduation</p>
+                <p className="text-gray-600">Currently Pursuing • Expected Graduation  june 2026</p>
               </div>
             </div>
             <p className="text-gray-700 mb-4">
@@ -61,7 +61,7 @@ const About = () => {
               Data Structures & Algorithms, Software System Design
             </p>
             <div className="flex flex-wrap gap-2">
-              <span className="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm">Dean's List</span>
+              <span className="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm">Open source contributor</span>
               <span className="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm">Tech Enthusiast</span>
               <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Project Leader</span>
             </div>
