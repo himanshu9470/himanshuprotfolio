@@ -45,7 +45,7 @@ const Home = () => {
                 className="flex items-center space-x-2 border-orange-300 text-orange-600 hover:bg-orange-50 hover-lift transition-all duration-300"
                 asChild
                 >
-                <a href="https://drive.google.com/file/d/1KAPaoHA9JhTC2iSBMSeVcNDQK3Tbotq2/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">
+                <a href="https://drive.google.com/file/d/1NrUkoiOBPZ4J_aVYxBO8tliPMiRxH-Nl/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
                   <Download size={18} />
                   <span>Download Resume</span>
                 </a>
