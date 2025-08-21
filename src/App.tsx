@@ -13,30 +13,40 @@ import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import CustomCursor from "./components/CustomCursor";
 
+// ✅ Initialize React Query Client once
 const queryClient = new QueryClient();
 
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <CustomCursor />
-      <BrowserRouter>
-        <div className="min-h-screen bg-white dark:bg-gray-900">
-          <Header />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/skills" element={<Skills />} />
-            <Route path="/experience" element={<Experience />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </div>
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
-);
+const App: React.FC = () => {
+  return (
+    <QueryClientProvider client={queryClient}>
+      <TooltipProvider>
+        {/* Notifications */}
+        <Toaster />
+        <Sonner />
+
+        {/* Fancy cursor */}
+        <CustomCursor />
+
+        {/* Routing */}
+        <BrowserRouter>
+          <div className="min-h-screen bg-white text-gray-900 dark:bg-gray-900 dark:text-white transition-colors duration-300">
+            <Header />
+            <main className="pt-16">
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/projects" element={<Projects />} />
+                <Route path="/skills" element={<Skills />} />
+                <Route path="/experience" element={<Experience />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="*" element={<NotFound />} />
+              </Routes>
+            </main>
+          </div>
+        </BrowserRouter>
+      </TooltipProvider>
+    </QueryClientProvider>
+  );
+};
 
 export default App;

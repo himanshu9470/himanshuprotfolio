@@ -107,6 +107,11 @@ const Home = () => {
                 image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=400&h=200&fit=crop"
               },
               {
+                title: "PDF Question Answering",
+                description: "AI-based PDF question answering system using LangChain and OpenAI.",
+                image: "/Screenshot 2025-08-21 093931.png"  // Place the image in public folder
+              },
+              {
                 title: "Echo Video Chat",
                 description: "Real-time video chat application with WebRTC and Socket.io.",
                 image: "/echo video chat.png"  // Place the image in public folder
@@ -122,7 +127,7 @@ const Home = () => {
                   <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
                   <p className="text-gray-600 mb-4">{project.description}</p>
                   <Button variant="outline" size="sm" className="border-orange-300 text-orange-600 hover:bg-orange-50 hover-lift transition-all duration-300">
-                    Learn More
+                  Learn More
                   </Button>
                 </div>
               </AnimatedSection>

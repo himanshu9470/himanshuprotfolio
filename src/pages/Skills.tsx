@@ -9,9 +9,9 @@ const Skills = () => {
       skills: [
         { name: "Java", level: 90, category: "Language" },
         { name: "JavaScript (ES6+)", level: 92, category: "Language" },
-        { name: "TypeScript", level: 88, category: "Language" },
+        { name: "TypeScript", level: 40, category: "Language" },
         { name: "Python", level: 85, category: "Language" },
-        { name: "Spring Boot", level: 85, category: "Framework" },
+        { name: "Spring Boot", level: 60, category: "Framework" },
         { name: "HTML5/CSS3", level: 95, category: "Language" }
       ]
     },
@@ -20,10 +20,7 @@ const Skills = () => {
       icon: <TrendingUp className="text-blue-600" size={24} />,
       skills: [
         { name: "React", level: 90, category: "Framework" },
-        { name: "Next.js", level: 88, category: "Framework" },
         { name: "Tailwind CSS", level: 92, category: "Styling" },
-        { name: "Three.js", level: 80, category: "3D Graphics" },
-        { name: "GSAP", level: 75, category: "Animation" },
         { name: "Responsive Design", level: 95, category: "Design" }
       ]
     },
@@ -31,12 +28,10 @@ const Skills = () => {
       title: "Backend & Database",
       icon: <Award className="text-green-600" size={24} />,
       skills: [
-        { name: "Node.js", level: 85, category: "Runtime" },
         { name: "Express", level: 82, category: "Framework" },
         { name: "Supabase", level: 88, category: "BaaS" },
-        { name: "Firebase", level: 85, category: "BaaS" },
+        { name: "Firebase", level: 60, category: "BaaS" },
         { name: "MongoDB", level: 80, category: "NoSQL" },
-        { name: "PostgreSQL", level: 78, category: "SQL" }
       ]
     },
     {
@@ -44,11 +39,10 @@ const Skills = () => {
       icon: <CheckCircle className="text-purple-600" size={24} />,
       skills: [
         { name: "Git & GitHub", level: 90, category: "Version Control" },
-        { name: "Figma", level: 85, category: "Design" },
+        { name: "Figma", level: 50, category: "Design" },
         { name: "Postman", level: 88, category: "API Testing" },
         { name: "VS Code", level: 95, category: "IDE" },
-        { name: "Adobe XD", level: 75, category: "Design" },
-        { name: "Blender", level: 70, category: "3D Modeling" }
+        { name: "Blender", level: 30, category: "3D Modeling" }
       ]
     }
   ];
@@ -133,9 +127,9 @@ const Skills = () => {
             {specializations.map((spec, index) => (
               <div key={index} className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
                 <div className="mb-4">
-                  <span className={`px-3 py-1 rounded-full text-sm font-medium ${spec.color}`}>
+                  {/* <span className={`px-3 py-1 rounded-full text-sm font-medium ${spec.color}`}>
                     Specialty
-                  </span>
+                  </span> */}
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">{spec.name}</h3>
                 <p className="text-gray-600 text-sm">{spec.description}</p>
@@ -149,11 +143,11 @@ const Skills = () => {
           <h2 className="text-3xl font-bold mb-6 text-center">Key Achievements</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="text-center">
-              <div className="text-4xl font-bold mb-2">2+</div>
+              <div className="text-4xl font-bold mb-2">1+</div>
               <div className="opacity-90">Years of Experience</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold mb-2">15+</div>
+              <div className="text-4xl font-bold mb-2">2+</div>
               <div className="opacity-90">Technologies Mastered</div>
             </div>
             <div className="text-center">

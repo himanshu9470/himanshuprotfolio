@@ -15,13 +15,24 @@ const Projects = () => {
       featured: true
     },
     {
+      id: 1,
+      title: "AI-Powered PDF- Question Answering System",
+      description: "A lightweight MVP that lets you upload PDFs and ask natural-language questions about their contents. Powered by a retrieval-augmented pipeline, it extracts text, indexes via FAISS, and uses a small LLM (FLAN-T5) to generate concise answers in seconds.",
+      image: "/Screenshot 2025-08-21 093931.png",  // Place the image in public folder
+      technologies: ["Python", "LangChain", "FAISS", "Gradio", "HuggingFace"],
+      liveUrl: "https://huggingface.co/spaces/himanshukumar378/Mutliple_chat_pdf",
+      githubUrl: "https://github.com/himanshu9470/pdf-question-answering",
+      date: "2025",
+      featured: true
+    },
+    {
       id: 2,
       title: "Animated Tech Portfolio",
       description: "A 3D animated developer portfolio showcasing projects and skills using Next.js, Three.js, GSAP, and Blender. Built for visual engagement and interactivity.",
       image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=600&h=400&fit=crop",
       technologies: ["Next.js", "Three.js", "GSAP", "Blender", "TypeScript"],
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com",
+      liveUrl: "http://himanshukr.me/",
+      githubUrl: "https://github.com/himanshu9470/himanshuprotfolio",
       date: "2025",
       featured: true
     },
@@ -31,7 +42,7 @@ const Projects = () => {
       description: "Built a role-based dashboard for faculty and students to manage attendance, subject tracking, and real-time updates using Supabase.",
       image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop",
       technologies: ["Next.js", "Supabase", "Tailwind CSS", "PostgreSQL"],
-      liveUrl: "https://example.com",
+      liveUrl: "#",
       githubUrl: "https://github.com/himanshu9470/Student-managment",
       date: "2025"
     },
@@ -52,7 +63,7 @@ const Projects = () => {
       description: "A Python-based web application that allows users to view, annotate, and manage PDF documents online. Features include drag-and-drop upload, page rearrangement, merging/splitting PDFs, and real-time preview.",
       image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&h=400&fit=crop",
       technologies: ["Python", "Flask", "PyPDF2", "pdf2image", "HTML/CSS", "JavaScript"],
-      liveUrl: "https://example.com",
+      liveUrl: "#",
       githubUrl: "https://github.com/himanshu9470/pdfworkparty",
       date: "2025"
     }
