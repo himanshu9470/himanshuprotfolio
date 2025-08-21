@@ -1,8 +1,4 @@
-Here's a professional and complete `README.md` file for your **developer portfolio** project. It includes all the essential sections like introduction, features, technologies used, setup instructions, and deployment info:
 
----
-
-```markdown
 # 🚀 Himanshu Kumar Vishwakarma – Developer Portfolio
 
 Welcome to my personal developer portfolio! This portfolio showcases my skills, projects, and experience as a Full-Stack Developer. Built with modern technologies and interactive animations, this site serves as a digital reflection of who I am as a developer.
