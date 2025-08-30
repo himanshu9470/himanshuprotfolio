@@ -26,6 +26,17 @@ const Projects = () => {
       featured: true
     },
     {
+      id: 1,
+      title: "Edutech",
+      description: " A comprehensive educational platform for students and teachers.",
+      image: "/TutorCrafthome.png",  // Place the image in public folder
+      technologies: ["React", "Node.js", "TypeScript","Tailwind CSS","Supabase","Vercel (Deployment)"],
+      liveUrl: "https://edutechaitutors.vercel.app/",
+      githubUrl: "https://github.com/himanshu9470/EduTech-pr",
+      date: "2025",
+      featured: true
+    },
+    {
       id: 2,
       title: "Animated Tech Portfolio",
       description: "A 3D animated developer portfolio showcasing projects and skills using Next.js, Three.js, GSAP, and Blender. Built for visual engagement and interactivity.",

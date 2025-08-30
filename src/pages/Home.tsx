@@ -102,6 +102,11 @@ const Home = () => {
                 image: "/medassess.jpg"  // Place the image in public folder
               },
               {
+                title: "EduTech Platform",
+                description: "A comprehensive educational platform for students and teachers.",
+                image: "/TutorCrafthome.png"  // Place the image in public folder
+              },
+              {
                 title: "3D Animated Portfolio",
                 description: "Interactive developer portfolio using Three.js, GSAP, and Blender.",
                 image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=400&h=200&fit=crop"
